@@ -1,0 +1,59 @@
+# -*- org -*-
+# -*- encoding: utf-8 -*-
+#+STARTUP: hidestars
+#+STARTUP: indent
+#+PROPERTY: CLOCK_INTO_DRAWER t
+#+FILETAGS: PROJECT
+#+TAGS: 需协助(h) 等待(w) 重要紧急(a) 重要非紧急(c) 非重要紧急(b) 非重要非紧急(d) PROJECT(p)
+#+TAGS: { @Office(o) @Home(h) @Computer(c) @Call(C) @Way(w) @Lunchtime(l) }
+#+TAGS: { Department(d) Team(t) }
+#+TAGS
+
+#+TITLE: GTD
+#+AUTHOR: Bruce Asu
+#+EMAIL: bruceasu@163.com
+#+OPTIONS: ^:nil num:nil toc:t
+#+PRETTIFY_CSS:     resources/styles/prettify.css
+#+FONTS_CSS:        resources/styles/fonts.css
+#+PRESENTATION_CSS: resources/styles/presentation.css
+#+COMMON_CSS:       resources/styles/common.css
+#+DEFAULT_CSS:      resources/styles/default.css
+#+MOON_CSS:         resources/styles/moon.css
+#+SAND_CSS:         resources/styles/sand.css
+#+SEA_WAVE_CSS:     resources/styles/sea_wave.css
+#+IE_LT_9_JS:       resources/js/CFInstall.min.js
+#+PRETTIFY_JS:      resources/js/prettify.js
+#+UTILS_JS:         resources/js/utils.js
+#+HTML_HEAD:        <link rel="stylesheet" href="resources/styles/mystyle.css" type="text/css" />
+
+#+OPTIONS: creator:comment d:(not LOGBOOK) date:t e:t email:nil f:t inline:t
+#+OPTIONS: num:t p:nil pri:nil stat:t tags:t tasks:t tex:t timestamp:t toc:t
+#+OPTIONS: todo:t |:t
+#+DESCRIPTION:
+#+EXCLUDE_TAGS: noexport
+#+KEYWORDS: 技术预研,项目
+#+LANGUAGE: en
+#+SELECT_TAGS: export
+#+OPTIONS: html-postamble:auto html-preamble:t tex:t
+#+CREATOR: Bruce Asu
+#+HTML_CONTAINER: div
+#+HTML_DOCTYPE: xhtml-strict
+#+HTML_HEAD: <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+#+HTML_HEAD_EXTRA:  <link rel="stylesheet" type="text/css" href="org-manual.css" />
+#+HTML_HTML5_FANCY:
+#+INFOJS_OPT:
+
+
+* test servers, may be use vpn to access.
+
+|             ip | remark                   | ssh port | user | password   |
+|----------------+--------------------------+----------+------+------------|
+| 192.168.35.233 | postgres, cassandra, web |      242 | root | Gold1234{} |
+|  192.168.35.61 | ignite                   |      242 | root | Gold1234{} |
+|  192.168.35.62 | ignite                   |      242 | root | Gold1234{} |
+|  192.168.35.63 | ignite                   |      242 | root | Gold1234{} |
+|                |                          |          |      |            |
+
+
+
+

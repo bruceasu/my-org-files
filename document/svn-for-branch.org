@@ -1,0 +1,94 @@
+# -*- org -*-
+# -*- encoding: utf-8 -*-
+#+TITLE: SVN分支使用
+#+STARTUP: hidestars
+#+STARTUP: indent
+#+PROPERTY: CLOCK_INTO_DRAWER t
+#+FILETAGS: PROJECT
+#+TAGS: 需协助(h) 等待(w) 重要紧急(a) 重要非紧急(c) 非重要紧急(b) 非重要非紧急(d) PROJECT(p)
+#+TAGS: { @Office(o) @Home(h) @Computer(c) @Call(C) @Way(w) @Lunchtime(l) }
+#+TAGS: { Department(d) Team(t) }
+#+TAGS
+
+#+AUTHOR: Bruce Asu
+#+EMAIL: bruceasu@163.com
+#+OPTIONS: ^:nil num:nil toc:t
+#+PRETTIFY_CSS:     resources/styles/prettify.css
+#+FONTS_CSS:        resources/styles/fonts.css
+#+PRESENTATION_CSS: resources/styles/presentation.css
+#+COMMON_CSS:       resources/styles/common.css
+#+DEFAULT_CSS:      resources/styles/default.css
+#+MOON_CSS:         resources/styles/moon.css
+#+SAND_CSS:         resources/styles/sand.css
+#+SEA_WAVE_CSS:     resources/styles/sea_wave.css
+#+IE_LT_9_JS:       resources/js/CFInstall.min.js
+#+PRETTIFY_JS:      resources/js/prettify.js
+#+UTILS_JS:         resources/js/utils.js
+#+HTML_HEAD:        <link rel="stylesheet" href="resources/styles/mystyle.css" type="text/css" />
+
+#+OPTIONS: creator:comment d:(not LOGBOOK) date:t e:t email:nil f:t inline:t
+#+OPTIONS: num:t p:nil pri:nil stat:t tags:t tasks:t tex:t timestamp:t toc:t
+#+OPTIONS: todo:t |:t
+#+DESCRIPTION:
+#+EXCLUDE_TAGS: noexport
+#+KEYWORDS: 技术预研,项目
+#+LANGUAGE: en
+#+SELECT_TAGS: export
+#+OPTIONS: html-postamble:auto html-preamble:t tex:t
+#+CREATOR: Bruce Asu
+#+HTML_CONTAINER: div
+#+HTML_DOCTYPE: xhtml-strict
+#+HTML_HEAD: <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+#+HTML_HEAD_EXTRA:  <link rel="stylesheet" type="text/css" href="org-manual.css" />
+#+HTML_HTML5_FANCY:
+#+INFOJS_OPT:
+
+
+* 五何·问答
+** 何事（what）
+  合理采取分支管理代码？
+** 为何 (why)
+  1. 未来的需求可能会越来越多，而实现后未必能上线，不能污染主干。
+  2. 多人改缺陷，可能有冲突，确保先测试通过，先提交。以单个缺陷提交为原则。
+     若计划多个缺陷同时提交测试，则应共同在一个分支。
+** 何人(who)
+  1. 所有人都可以创建分支
+  2. 合并分支到主干：
+     + 先获得 Victor 或者 James 的许可
+     + 再由 Victor 或者 Darren 操作
+** 何时(when)
+  1. 新需求
+  2. 发现缺陷
+** 何地(where)
+  1. 源码在svn的trunk同级目录的branch目录
+  2. 命名规则：
+     - ^/branch/$username/new-feature-name-and-create-time
+     - ^/branch/$username/fix-bug-number-or-name-and-create-time
+** how 如何
+  1. 使用工具从主干或者标签新建分支。
+     + 从主干新建的，将来合并回主干
+     + 从标签新建的，将来新建一个标签，有选择地合并到主干
+       ——取决于处理的部分在主干是否还存在。
+  2. 在修复缺陷和开发新特性期间，应时不时从主干合并回最新的代码，减少差异。
+     特别要注意更新到正在修改的代码，或者冲突的代码，应与提交者沟通修改的
+     逻辑。
+     + 提交代码，打包提测前，必须同步合并一次代码。
+     + 建议每天合并一次。
+  3. 测试通过后，并发布到生产环境后，提出合并代码回主干或者新建标签的申请，
+     由指定的人去操作。
+
+* 其他
+** 创建标签
+  1. 系统部署发布后，对应的代码合并到主干后，从主干新建标签
+  2. 命名规则：^/tags/release-version-date
+** 版本规则
+  1. x.y.z
+     | 段 | 含义       | 升级                                                        |
+     |----+------------+-------------------------------------------------------------|
+     | x  | 主版本号   | 由PD决定是否加1                                             |
+     | y  | 功能版本号 | 新增较多的特性后，通常是里程碑点，由开发负责人决定是否加1。 |
+     |    |            | 当主版本号升级后，置0                                       |
+     | z  | 发布版本号 | 每次发布后，不管是修复缺陷还是新增特性。                    |
+     |    |            | 当主版本号或者功能版本号加1后，都要置0                      |
+               
+  2. 由开发负责人在发版前确定发布版本号

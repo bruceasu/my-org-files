@@ -1,0 +1,115 @@
+# -*- org -*-
+# -*- encoding: utf-8 -*-
+#+STARTUP: hidestars
+#+STARTUP: indent
+#+PROPERTY: CLOCK_INTO_DRAWER t
+#+FILETAGS: PROJECT
+#+TAGS: 需协助(h) 等待(w) 重要紧急(a) 重要非紧急(c) 非重要紧急(b) 非重要非紧急(d) PROJECT(p)
+#+TAGS: { @Office(o) @Home(h) @Computer(c) @Call(C) @Way(w) @Lunchtime(l) }
+#+TAGS: { Department(d) Team(t) }
+#+TAGS
+
+#+TITLE: GTD
+#+AUTHOR: Bruce Asu
+#+EMAIL: bruceasu@163.com
+#+OPTIONS: ^:nil num:nil toc:t
+#+PRETTIFY_CSS:     resources/styles/prettify.css
+#+FONTS_CSS:        resources/styles/fonts.css
+#+PRESENTATION_CSS: resources/styles/presentation.css
+#+COMMON_CSS:       resources/styles/common.css
+#+DEFAULT_CSS:      resources/styles/default.css
+#+MOON_CSS:         resources/styles/moon.css
+#+SAND_CSS:         resources/styles/sand.css
+#+SEA_WAVE_CSS:     resources/styles/sea_wave.css
+#+IE_LT_9_JS:       resources/js/CFInstall.min.js
+#+PRETTIFY_JS:      resources/js/prettify.js
+#+UTILS_JS:         resources/js/utils.js
+#+HTML_HEAD:        <link rel="stylesheet" href="resources/styles/mystyle.css" type="text/css" />
+
+#+OPTIONS: creator:comment d:(not LOGBOOK) date:t e:t email:nil f:t inline:t
+#+OPTIONS: num:t p:nil pri:nil stat:t tags:t tasks:t tex:t timestamp:t toc:t
+#+OPTIONS: todo:t |:t
+#+DESCRIPTION:
+#+EXCLUDE_TAGS: noexport
+#+KEYWORDS: 技术预研,项目
+#+LANGUAGE: en
+#+SELECT_TAGS: export
+#+OPTIONS: html-postamble:auto html-preamble:t tex:t
+#+CREATOR: Bruce Asu
+#+HTML_CONTAINER: div
+#+HTML_DOCTYPE: xhtml-strict
+#+HTML_HEAD: <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+#+HTML_HEAD_EXTRA:  <link rel="stylesheet" type="text/css" href="org-manual.css" />
+#+HTML_HTML5_FANCY:
+#+INFOJS_OPT:
+
+* 周期任务
+** 部门工作                                                                     :Department:
+*** HOLD 周报                                                       :HOLD:
+计划时间： <2018-05-25 周五 13:15 ++1w>
+:PROPERTIES:
+:LAST_REPEAT: [2018-05-21 周一 09:03]
+:END:
+- State "DONE"       from "TODO"       [2018-05-21 周一 09:03]
+:PROPERTIES:
+:LAST_REPEAT: [2017-07-31 Mon 08:46]
+** 项目组工作                                                                  :Team:
+** 周例会
+** TODO 同步数据
+:PROPERTIES:
+:LAST_REPEAT: [2018-09-17 周一 09:24]
+:END:
+- State "DONE"       from "TODO"       [2018-09-17 周一 09:24]
+计划时间： <2018-09-18 周二 ++1d>
+:PROPERTIES:
+:LAST_REPEAT: [2018-05-21 周一 09:03]
+:END:
+- State "DONE"       from "TODO"       [2018-05-21 周一 09:03]
+:PROPERTIES:
+:LAST_REPEAT: [2017-08-07 Mon 18:38]
+:END:
+* 临时待办
+
+* 安排
+
+** TODO Weekly Review [0/6]
+计划时间： <2018-10-15 周一 ++1w>
+:PROPERTIES:
+:LAST_REPEAT: [2018-10-10 周三 13:59]
+:END:
+- State "DONE"       from "TODO"       [2018-10-10 周三 13:59]
+- State "DONE"       from "TODO"       [2018-09-17 周一 09:22]
+- State "DONE"       from "NEXT"       [2018-08-20 周一 09:16]
+- State "NEXT"       from "TODO"       [2018-08-14 周二 17:57]
+- State "DONE"       from "NEXT"       [2018-08-10 周五 18:30]
+using d/w to swith daily or weekly agenda view.
+What to review:
+- [ ] Review weekly agenda =F12 a w //=
+- [ ] Check clocking data for past week =v c=
+- [ ] Review clock report for past week =R=
+  - Check where we spent time (too much or too little) and rectify this week
+- [ ] Look at entire agenda for today  =F12 SPC=
+- [ ] Review projects =F12 SPC //= and =V= repeatedly to view each project
+- [-] start work
+  - [ ] task1
+  - [ ] task2
+  - [ ] task3
+  - [ ] task4
+
+
+
+* clock table report
+** update report with C-c C-x C-u
+** weekly report (C-c C-x C-r)
+#+BEGIN: clocktable :maxlevel 5 :scope file :block thisweek 1 :fileship0 t :indent t
+#+CAPTION: Clock summary at [2018-08-07 周二 11:39], for week 2018-W32.
+| Headline     | Time   |
+|--------------+--------|
+| *Total time* | *0:00* |
+#+END:
+
+** Original Estimate ( C-c C-x i RET)
+
+
+
+

@@ -1,0 +1,18 @@
+# -*- org -*-
+# -*- encoding: utf-8 -*-
+#+STARTUP: hidestars
+#+FILETAGS: NOTES
+#+STARTUP: indent
+#+TAGS: 需协助(h) 等待(w) 重要紧急(a) 重要非紧急(c) 非重要紧急(b) 非重要非紧急(d)
+#+TAGS: { @Office(o) @Home(h) @Computer(c) @Call(C) @Way(w) @Lunchtime(l) }
+#+TAGS
+
+# 本文件记录：
+# 1. 有关信息
+# 2. 想法
+
+* 便签
+
+* 想法
+
+

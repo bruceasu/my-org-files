@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>SVN分支使用</title>
+<!-- 2016-06-06 Mon 17:30 -->
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="generator" content="Org-mode" />
+<meta  name="author" content="Victor Suk" />
+<meta  name="keywords" content="svn 分支" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  pre.src-sh:before    { content: 'sh'; }
+  pre.src-bash:before  { content: 'sh'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-R:before     { content: 'R'; }
+  pre.src-perl:before  { content: 'Perl'; }
+  pre.src-java:before  { content: 'Java'; }
+  pre.src-sql:before   { content: 'SQL'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.right  { text-align: center;  }
+  th.left   { text-align: center;   }
+  th.center { text-align: center; }
+  td.right  { text-align: right;  }
+  td.left   { text-align: left;   }
+  td.center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara:nth-child(2) { display: inline; }
+  .footpara { display: block; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" href="resources/styles/mystyle.css" type="text/css" />
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="org-manual.css" />
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">SVN分支使用</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">1. 五何·问答</a>
+<ul>
+<li><a href="#sec-1-1">1.1. 何事（what）</a></li>
+<li><a href="#sec-1-2">1.2. 为何 (why)</a></li>
+<li><a href="#sec-1-3">1.3. 何人(who)</a></li>
+<li><a href="#sec-1-4">1.4. 何时(when)</a></li>
+<li><a href="#sec-1-5">1.5. 何地(where)</a></li>
+<li><a href="#sec-1-6">1.6. how 如何</a></li>
+</ul>
+</li>
+<li><a href="#sec-2">2. 其他</a>
+<ul>
+<li><a href="#sec-2-1">2.1. 创建标签</a></li>
+<li><a href="#sec-2-2">2.2. 版本规则</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> 五何·问答</h2>
+<div class="outline-text-2" id="text-1">
+</div><div id="outline-container-sec-1-1" class="outline-3">
+<h3 id="sec-1-1"><span class="section-number-3">1.1</span> 何事（what）</h3>
+<div class="outline-text-3" id="text-1-1">
+<p>
+合理采取分支管理代码？
+</p>
+</div>
+</div>
+<div id="outline-container-sec-1-2" class="outline-3">
+<h3 id="sec-1-2"><span class="section-number-3">1.2</span> 为何 (why)</h3>
+<div class="outline-text-3" id="text-1-2">
+<ol class="org-ol">
+<li>未来的需求可能会越来越多，而实现后未必能上线，不能污染主干。
+</li>
+<li>多人改缺陷，可能有冲突，确保先测试通过，先提交。以单个缺陷提交为原则。
+若计划多个缺陷同时提交测试，则应共同在一个分支。
+</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-sec-1-3" class="outline-3">
+<h3 id="sec-1-3"><span class="section-number-3">1.3</span> 何人(who)</h3>
+<div class="outline-text-3" id="text-1-3">
+<ol class="org-ol">
+<li>所有人都可以创建分支
+</li>
+<li>合并分支到主干：
+<ul class="org-ul">
+<li>先获得 Victor 或者 James 的许可
+</li>
+<li>再由 Victor 或者 Darren 操作
+</li>
+</ul>
+</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-sec-1-4" class="outline-3">
+<h3 id="sec-1-4"><span class="section-number-3">1.4</span> 何时(when)</h3>
+<div class="outline-text-3" id="text-1-4">
+<ol class="org-ol">
+<li>新需求
+</li>
+<li>发现缺陷
+</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-sec-1-5" class="outline-3">
+<h3 id="sec-1-5"><span class="section-number-3">1.5</span> 何地(where)</h3>
+<div class="outline-text-3" id="text-1-5">
+<ol class="org-ol">
+<li>源码在svn的trunk同级目录的branch目录
+</li>
+<li>命名规则：
+<ul class="org-ul">
+<li>^/branch/$username/new-feature-name-and-create-time
+</li>
+<li>^/branch/$username/fix-bug-number-or-name-and-create-time
+</li>
+</ul>
+</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-sec-1-6" class="outline-3">
+<h3 id="sec-1-6"><span class="section-number-3">1.6</span> how 如何</h3>
+<div class="outline-text-3" id="text-1-6">
+<ol class="org-ol">
+<li>使用工具从主干或者标签新建分支。
+<ul class="org-ul">
+<li>从主干新建的，将来合并回主干
+</li>
+<li>从标签新建的，将来新建一个标签，有选择地合并到主干
+——取决于处理的部分在主干是否还存在。
+</li>
+</ul>
+</li>
+<li>在修复缺陷和开发新特性期间，应时不时从主干合并回最新的代码，减少差异。
+特别要注意更新到正在修改的代码，或者冲突的代码，应与提交者沟通修改的
+逻辑。
+<ul class="org-ul">
+<li>提交代码，打包提测前，必须同步合并一次代码。
+</li>
+<li>建议每天合并一次。
+</li>
+</ul>
+</li>
+<li>测试通过后，并发布到生产环境后，提出合并代码回主干或者新建标签的申请，
+由指定的人去操作。
+</li>
+</ol>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2"><span class="section-number-2">2</span> 其他</h2>
+<div class="outline-text-2" id="text-2">
+</div><div id="outline-container-sec-2-1" class="outline-3">
+<h3 id="sec-2-1"><span class="section-number-3">2.1</span> 创建标签</h3>
+<div class="outline-text-3" id="text-2-1">
+<ol class="org-ol">
+<li>系统部署发布后，对应的代码合并到主干后，从主干新建标签
+</li>
+<li>命名规则：^/tags/release-version-date
+</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-sec-2-2" class="outline-3">
+<h3 id="sec-2-2"><span class="section-number-3">2.2</span> 版本规则</h3>
+<div class="outline-text-3" id="text-2-2">
+<ol class="org-ol">
+<li>x.y.z
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="left" />
+
+<col  class="left" />
+
+<col  class="left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="left">段</th>
+<th scope="col" class="left">含义</th>
+<th scope="col" class="left">升级</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="left">x</td>
+<td class="left">主版本号</td>
+<td class="left">由PD决定是否加1</td>
+</tr>
+
+<tr>
+<td class="left">y</td>
+<td class="left">功能版本号</td>
+<td class="left">新增较多的特性后，通常是里程碑点，由开发负责人决定是否加1。</td>
+</tr>
+
+<tr>
+<td class="left">&#xa0;</td>
+<td class="left">&#xa0;</td>
+<td class="left">当主版本号升级后，置0</td>
+</tr>
+
+<tr>
+<td class="left">z</td>
+<td class="left">发布版本号</td>
+<td class="left">每次发布后，不管是修复缺陷还是新增特性。</td>
+</tr>
+
+<tr>
+<td class="left">&#xa0;</td>
+<td class="left">&#xa0;</td>
+<td class="left">当主版本号或者功能版本号加1后，都要置0</td>
+</tr>
+</tbody>
+</table>
+</li>
+
+<li>由开发负责人在发版前确定发布版本号
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Victor Suk</p>
+<p class="date">Created: 2016-06-06 Mon 17:30</p>
+<p class="creator"><a href="http://www.gwtsz.com">盖威科技</a></p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

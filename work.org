@@ -1,0 +1,36 @@
+# -*- org -*-
+# -*- encoding: utf-8 -*-
+#+STARTUP: hidestars
+#+STARTUP: indent
+#+FILETAGS: PROJECT
+#+TAGS: 需协助(h) 等待(w) 重要紧急(a) 重要非紧急(c) 非重要紧急(b) 非重要非紧急(d) 
+#+TAGS: { @Office(o) @Home(h) @Computer(c) @Call(C) @Way(w) @Lunchtime(l) }
+#+TAGS: { project(p) }
+#+TAGS
+#+PROPERTY: CLOCK_INTO_DRAWER t
+
+
+# 本文件记录项目的事务
+
+* 项目
+
+
+* clock table report
+** weekly report (C-c C-x C-r)
+#+BEGIN: clocktable :maxlevel 5 :scope file :block thisweek 1 :fileship0 t :indent t
+#+CAPTION: Clock summary at [2018-05-02 周三 09:07], for week 2018-W18.
+| Headline     | Time   |
+|--------------+--------|
+| *Total time* | *0:00* |
+#+END:
+
+** Original Estimate ( C-c C-x i RET)
+#+BEGIN: columnview :hlines 1 :id global
+
+#+END:
+
+
+
+
+
+

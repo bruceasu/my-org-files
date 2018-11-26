@@ -1,0 +1,7 @@
+# -*- org -*-
+# -*- encoding: utf-8 -*-
+#+STARTUP: indent
+
+
+* trash
+
