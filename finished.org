@@ -1,0 +1,10 @@
+# -*- org -*-
+# -*- encoding: utf-8 -*-
+#+STARTUP: hidestars
+#+STARTUP: indent
+
+#+TAGS: { @Office(o) @Home(h) @Computer(c) @Call(C) @Way(w) @Lunchtime(l) }
+#+TAGS: { project(p) }
+#+TAGS: 需协助(h) 等待(w) 重要紧急(a) 重要非紧急(c) 非重要紧急(b) 非重要非紧急(d)
+
+# 本文件记录已经完成的事务

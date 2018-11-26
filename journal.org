@@ -1,0 +1,301 @@
+
+* 2017
+** 2017-04 April
+*** 2017-04-05 Wednesday
+**** 清理项目环境配置、打包配置
+**** 线上系统问题分析
+*** 2017-04-06 Thursday
+**** 编写SVN代码版本
+**** 处理不能用maven打包的项目。
+**** make projects can build and depoly with jenkins
+*** 2017-04-07 Friday
+**** make projects can build and depoly with jenkins
+**** 验证易势快捷支付代码
+*** 2017-04-10 Monday
+**** 分析批量代付直接上传文件接口需求。
+**** 看易势快捷支付代码。
+*** 2017-04-11 Tuesday
+**** 为批量代付功能做商户DEMO
+**** 开发商户可用余额接口商户DEMO
+**** autoBat无法打包问题。
+*** 2017-04-12 Wednesday
+**** 设计批量代付接口流程
+*** 2017-04-13 Thursday
+**** 设计批量代付通知流程
+*** 2017-04-14 Friday
+**** 开发批量代付通知跑批任务
+**** 开发批量代付通知发送通知
+*** 2017-04-17 Monday
+**** 完成批量代付通知跑批自测。
+Entered on [2017-04-17 Mon 11:41]
+  
+  [[file:d:/victor/org/work.org::*%E5%BC%80%E5%8F%91%E6%89%B9%E9%87%8F%E4%BB%A3%E4%BB%98%E9%80%9A%E7%9F%A5%E8%B7%91%E6%89%B9%E4%BB%BB%E5%8A%A1][开发批量代付通知跑批任务]]
+**** 完成批量代付通知发送自测。
+Entered on [2017-04-17 Mon 18:12]
+  
+  [[file:d:/victor/org/work.org::*%E5%BC%80%E5%8F%91%E6%89%B9%E9%87%8F%E4%BB%A3%E4%BB%98%E9%80%9A%E7%9F%A5%E5%8F%91%E9%80%81%E9%80%9A%E7%9F%A5][开发批量代付通知发送]]
+*** 2017-04-18 Tuesday
+**** 把码改造成plugins支持方式，用于加载公司的代码
+Entered on [2017-04-18 Tue 18:34]
+  
+  [[file:d:/victor/org/work.org::*%E4%BB%A3%E7%A0%81%E7%A7%BB%E6%A4%8D][代码移植]]
+*** 2017-04-19 Wednesday
+**** 测试完善易势Mock.
+Entered on [2017-04-19 Wed 18:16]
+  
+  [[file:d:/victor/org/work.org::*%E6%B5%8B%E8%AF%95%E6%98%93%E5%8A%BF][测试易势]]
+*** 2017-04-20 Thursday
+**** 实现模拟智惠网银
+Entered on [2017-04-20 Thu 19:05]
+  
+  [[file:d:/victor/org/work.org::*%E7%BD%91%E9%93%B6][网银]]
+*** 2017-04-21 Friday
+**** Mock 智惠，未测试
+*** 2017-04-24 Monday
+**** kyro的问题出线上代码有问题。本地用源码测试没有出现异常。
+Entered on [2017-04-24 Mon 11:01]
+  
+  [[file:d:/victor/org/work.org::*Kyro%E5%BA%8F%E5%88%97%E5%8C%96%E9%97%AE%E9%A2%98][Kyro序列化问题]]
+**** 检查UAT quickpay 发布问题。
+Entered on [2017-04-24 Mon 13:44]
+  
+  [[file:d:/victor/org/work.org::*UAT%20quickpay%20%E5%8F%91%E5%B8%83%E9%97%AE%E9%A2%98][UAT quickpay 发布问题]]
+**** 完成智惠模拟
+Entered on [2017-04-24 Mon 17:56]
+  
+  [[file:d:/victor/org/work.org::*%E5%AE%9E%E7%8E%B0%E6%99%BA%E6%83%A0][实现智惠]]
+*** 2017-04-25 Thursday
+**** Review Misa's code.
+*** 2017-04-26 Wednesday
+**** 测试misa的代码，并修改错误。
+Entered on [2017-04-26 Wed 16:16]
+  
+  [[file:d:/victor/org/work.org::*%E6%B5%8B%E8%AF%95misa%E7%9A%84%E4%BB%A3%E7%A0%81%EF%BC%8C%E5%B9%B6%E4%BF%AE%E6%94%B9%E9%94%99%E8%AF%AF%E3%80%82][测试misa的代码，并修改错误。]]
+*** 2017-04-27 Thursday
+**** 为模拟服务添加mock-init支持。
+**** 实现易势mock data处理
+*** 2017-04-28 Friday
+**** 实现智惠mock data处理
+** 2017-05 May
+*** 2017-05-08 Monday
+**** 审阅批量代付文档。
+**** 协助Misa查SIT环境问题。
+**** 编写模拟HTTP服务器文档。
+*** 2017-05-09 Tuesday
+**** 协助Misa查SIT环境问题。
+**** 编写模拟HTTP服务器文档。
+*** 2017-05-10 Wednesday
+**** 到HK开会，运营问题
+**** 监控方案讨论
+*** 2017-05-11 Thursday
+**** Learn infuxdb and grafana
+*** 2017-05-12 Friday
+**** make monitor sdk
+*** 2017-05-15 Monday
+**** 添加zookeeper, dubbo service 监控到临时监控脚本。
+*** 2017-05-16 Tuesday
+**** 为paygate添加收集监控数据。
+*** 2017-05-17 Wednesday
+**** [[file:d:/victor/org/work.org::*%E5%AE%89%E6%8E%92%E3%80%81%E8%B7%9F%E8%BF%9BMAVEN%E6%89%93%E5%8C%85%E6%A3%80%E6%9F%A5%E6%83%85%E5%86%B5%E3%80%82][安排、跟进MAVEN打包检查情况。]]
+*** 2017-05-19 Friday
+**** 安装配置grafana, 用来显示数据。
+*** 2017-05-22 Monday
+**** 提测paygate的功能
+*** 2017-05-23 Tursday
+**** 看monitor代码
+**** 看模拟易势服务为何签名有问题
+*** 2017-05-24 Wednesday
+**** fixed paygate problems
+**** help misa and kyle for mock server code
+**** research monitor
+*** 2017-05-25 Thursday
+**** install grafana on 192.168.35.63
+**** set up some charts in grafana
+**** merged codes to UAT with payGate, huadao-common
+**** write a note for install grafana and infuxdb on linux.
+*** 2017-05-26 Friday
+**** monitor add WebPayNotSuc
+*** 2017-05-27 Satday
+**** 分布式链路监控设计研究 zipkin
+*** 2017-05-31 Wednesday
+**** [[file:d:/victor/org/gtd.org::*%E6%94%AF%E4%BB%98%E9%A1%B9%E7%9B%AE%E5%B7%A5%E4%BD%9C%E4%BA%A4%E6%8E%A5%E3%80%82][支付项目工作交接。]]
+**** APP配置项目[[file:d:/victor/org/work.org::*%E5%88%9D%E6%AD%A5%E5%B7%A5%E4%BD%9C%E9%87%8F%E8%AF%84%E4%BC%B0%EF%BC%81][初步工作量评估！]]
+** 2017-06 July
+*** 2017-06-05 Monday
+**** coding for publish of app configuration center
+*** 2017-06-06 Tuesday
+**** update code.
+**** write the api document
+*** 2017-06-07 Wednesday
+**** test ad publisher
+*** 2017-06-12 Monday
+**** 周例会
+**** write and test functions publisher
+**** install mysql and nginx for SIT and UAT
+**** setting the project manage system.
+*** 2017-06-13 Tuesday
+**** 调整发布代码
+*** 2017-06-14 Wednesday
+**** test and document
+*** 2017-06-15 Thursday
+**** [[file:d:/victor/org/work.org::*%E8%B0%83%E7%94%A8%E9%A2%91%E7%B9%81%E9%BB%91%E5%90%8D%E5%8D%95%EF%BC%88IP%EF%BC%8C%E7%A6%81%E7%94%A830%E5%88%86%E9%92%9F%EF%BC%89][调用频繁黑名单（IP，禁用30分钟）]]
+**** 测试配置中心
+*** 2017-06-16 Friday
+**** 测试支持
+*** 2017-06-19 Monday
+**** [[file:d:/victor/org/gtd.org::*%E5%91%A8%E4%BE%8B%E4%BC%9A][周例会]]
+**** 工作汇报
+*** 2017-06-20 Tuesday
+**** [[file:d:/victor/org/gtd.org::*%E6%B4%BB%E5%8A%A8%E4%B8%AD%E5%BF%83%E5%B9%B3%E5%8F%B02%E6%9C%9F%E6%80%BB%E7%BB%93%E4%BC%9A%E8%AE%AE][活动中心平台2期总结会议]] 2h
+**** union-framework sdk 分析 4h
+**** 活动平台需求 2h
+*** 2017-06-21 Wednesday
+**** 统一平台——统一账户服务需求会议
+**** 监控方案分析
+*** 2017-06-22 Thursday
+**** 统一平台——统一账户服务讨论
+**** SDK，ACCCOUNT SYSTEM 分析
+*** 2017-06-26 Monday
+**** 与PD开个支付优化会议。
+**** add MOCK to mock server
+*** 2017-06-27 Tuesday
+**** 把新同事加入到讨论组，申请SVN权限。
+**** 统一框架讨论会议
+**** 添加接入代码的到易势
+*** 2017-06-28 Wednesday
+**** 易势快捷支付开发。
+*** 2017-06-29 Thursday
+**** [[file:d:/victor/org/gtd.org::*%E4%B8%8B%E5%8D%881:30%20-%202:30%EF%BC%8C%E4%BC%9A%E8%AE%AE%E5%AE%A4%E4%BA%8C%20%E7%A7%BB%E5%8A%A8%E6%94%AF%E4%BB%98%E4%BC%98%E5%8C%96%E9%A1%B9%E7%9B%AE%E4%BC%9A%E8%AE%AE][下午1:30 - 2:30，会议室二 移动支付优化项目会议]]
+**** 易势快捷支付开发
+** 2017-07 July
+*** 2017-07-03 Monday
+**** 给nathan, baker做华道代码架构培训
+**** 为易势快捷支付添加通知
+**** 为paygate添加快捷支付通知
+**** 修改quickpay通知代码，发送给通道做验签和数据解析。
+*** 2017-07-04 Tuesday
+**** 测试天付宝DEMO——不成功
+**** 按照文档写接入代码
+*** 2017-07-05 Wednesday
+**** 编写天付宝接入代码
+*** 2017-07-06 Thursday
+**** 编写天付宝接入代码
+**** 编写 quickpay 代码，使之符合天付宝
+*** 2017-07-07 Friday
+**** 编写 quickpay 代码，使之符合天付宝
+**** 测试 天付宝接口：还是走不通
+*** 2017-07-10 Monday
+**** 天付宝快捷支付MOCK
+**** 开始天付宝网关支付
+*** 2017-07-11 Tuesday
+**** 天付宝支付，MOCK
+*** 2017-07-12 Wednesday
+**** 天付宝支付MOCK
+**** 天付宝支付MOCK TEST
+**** SIT packaging
+*** 2017-07-13 Thursday
+**** support testing
+**** begin agent pay
+*** 2017-07-14 Friday
+**** develop agent pay and test.
+*** 2017-07-17 Monday
+**** refactor tianfubao service name and package path, then test!
+*** 2017-07-18 Tuesday
+**** document for code converter
+**** meeting on HK
+**** dfpay test support
+*** 2017-07-19 Wednesday
+**** 按照新的多商户配置、通道命名规范重构。
+**** 整理std-code-tool文档和添加 TUI
+*** 2017-07-20 Thursday
+**** 用MOCK测试天付宝快捷支付
+**** 用MOCK测试quickpay
+*** 2017-07-21 Friday
+**** MOCK and Test 天付宝快捷支付
+*** 2017-07-24 Monday
+**** 华道快捷支付需求分析 
+*** 2017-07-25 Tuesday
+**** 分析设计华道快捷支付，并查找现存代码
+*** 2017-07-26 Wednesday
+**** 商户用户信息管理模块
+*** 2017-07-27 Thursday
+**** 按照kyle新实现的多通道商户号处理方式调整天付宝网关支付代付支付代码
+*** 2017-07-28 Friday
+**** 部署辅助工具
+*** 2017-07-31 Monday
+**** 华道快捷支付收银台——支付逻辑框架
+**** support tianfubao and dependent program uat environment setting
+** 2017-08 August
+*** 2017-08-01 Tuesday
+**** [[file:d:/victor/org/gtd.org::*%E5%8D%8F%E5%8A%A9%E5%A4%A9%E4%BB%98%E5%AE%9D%E5%A4%84%E7%90%86%E5%AF%86%E9%92%A5][协助天付宝处理密钥]]
+**** [[file:d:/victor/org/work.org::*%E4%B8%8D%E8%B0%83%E7%94%A8%E8%BD%AC%E7%A0%81%E6%9C%8D%E5%8A%A1][不调用转码服务]]
+*** 2017-08-02 Wednesday
+**** 华道快捷支付收银台
+*** 2017-08-03 Thursday
+**** 华道快捷支付收银台
+*** 2017-08-04 Friday
+**** 华道快捷支付收银台
+*** 2017-08-07 Monday
+**** 华道快捷支付收银台
+*** 2017-08-08 Thursday
+**** 华道快捷支付收银台
+*** 2017-08-09 Wednesday
+**** 华道快捷支付收银台
+*** 2017-08-10 Thursday
+**** 华道快捷支付收银台
+*** 2017-08-11 Friday 
+**** 华道快捷支付收银台
+*** 2017-08-13 Monday
+**** 华道快捷支付收银台
+*** 2017-08-14 Tursday
+****
+*** 2017-08-15 星期二
+**** [[file:d:/victor/org/gtd.org::*%E5%A4%A9%E4%BB%98%E5%AE%9D%E7%BD%91%E5%85%B3%E3%80%81%E4%BB%A3%E4%BB%98%E4%B8%8A%E7%BA%BF%E7%94%B3%E8%AF%B7][天付宝网关、代付上线申请]]
+**** [[file:d:/victor/org/work.org::*%E7%BB%91%E5%AE%9A%E4%BA%A4%E4%BA%92][绑定交互]]
+** 2017-09 September
+*** 2017-09-01 Friday
+**** 华道工作交接（武汉）
+*** 2017-09-04 Monday
+**** 统一账户需求会
+**** 需求分析
+*** 2017-09-05 Tuesday
+**** 需求分析
+**** 方案评估
+**** 华道工作交接（香港）
+*** 2017-09-06 Wednesday
+**** 概要设计
+*** 2017-09-07 Thursday
+**** 方案评审会
+**** 方案优化
+*** 2017-09-08 Friday
+**** 方案优化
+**** 工作分解，工作量评估
+*** 2017-09-11 星期一
+**** data structure protocol
+*** 2017-09-12 星期二
+**** [[file:d:/victor/org/work.org::*Connection][Connection]]
+*** 2017-09-13 星期三
+**** Connection
+*** 2017-09-19 Tuesday
+**** NDI
+*** 2017-09-20 Wednesday
+**** NDI
+*** 2017-09-22 星期五
+**** develop server
+**** finish server code. 
+Entered on [2017-09-22 周五 18:22]
+  
+  [[file:d:/victor/org/work.org::*server][server]]
+*** 2017-09-25 Monday
+**** develop client
+*** 2017-09-26 Tuesday
+**** develop client
+*** 2017-09-27 Wednesday
+**** finish develop client
+*** 2017-09-28 Thursday
+**** test sdk
+*** 2017-09-29 Friday
+**** test
+** 2017-10 十月
+*** 2017-10-09 星期一
+**** outter tcp client, blowfish tool, rsa tool.

@@ -1,0 +1,118 @@
+# -*- org -*-
+# -*- encoding: utf-8 -*-
+#+STARTUP: hidestars
+#+STARTUP: indent
+#+PROPERTY: CLOCK_INTO_DRAWER t
+#+FILETAGS: PROJECT
+#+TAGS: 需协助(h) 等待(w) 重要紧急(a) 重要非紧急(c) 非重要紧急(b) 非重要非紧急(d) PROJECT(p)
+#+TAGS: { @Office(o) @Home(h) @Computer(c) @Call(C) @Way(w) @Lunchtime(l) }
+#+TAGS: { Department(d) Team(t) }
+#+TAGS
+
+#+TITLE: Useful Shortcut
+#+AUTHOR: Bruce Asu
+#+EMAIL: bruceasu@163.com
+#+OPTIONS: ^:nil num:nil toc:t
+#+PRETTIFY_CSS:     resources/styles/prettify.css
+#+FONTS_CSS:        resources/styles/fonts.css
+#+PRESENTATION_CSS: resources/styles/presentation.css
+#+COMMON_CSS:       resources/styles/common.css
+#+DEFAULT_CSS:      resources/styles/default.css
+#+MOON_CSS:         resources/styles/moon.css
+#+SAND_CSS:         resources/styles/sand.css
+#+SEA_WAVE_CSS:     resources/styles/sea_wave.css
+#+IE_LT_9_JS:       resources/js/CFInstall.min.js
+#+PRETTIFY_JS:      resources/js/prettify.js
+#+UTILS_JS:         resources/js/utils.js
+#+HTML_HEAD:        <link rel="stylesheet" href="resources/styles/mystyle.css" type="text/css" />
+
+#+OPTIONS: creator:comment d:(not LOGBOOK) date:t e:t email:nil f:t inline:t
+#+OPTIONS: num:t p:nil pri:nil stat:t tags:t tasks:t tex:t timestamp:t toc:t
+#+OPTIONS: todo:t |:t
+#+DESCRIPTION:
+#+EXCLUDE_TAGS: noexport
+#+KEYWORDS: 技术预研,项目
+#+LANGUAGE: en
+#+SELECT_TAGS: export
+#+OPTIONS: html-postamble:auto html-preamble:t tex:t
+#+CREATOR: Bruce Asu
+#+HTML_CONTAINER: div
+#+HTML_DOCTYPE: xhtml-strict
+#+HTML_HEAD: <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+#+HTML_HEAD_EXTRA:  <link rel="stylesheet" type="text/css" href="org-manual.css" />
+#+HTML_HTML5_FANCY:
+#+INFOJS_OPT:
+
+
+* shortcut level1
+** F11 org-clock-goto
+** C-F11 org-clock-in
+** C-F12 calendar
+** F12 c-ca 日程
+
+** S-F11 switch to *scratch*
+** F9 ska-point-to-register
+** S-F9 ska-jump-to-register
+** F8 toggle-letter-case
+** F7 insert-kbd-macro
+** F6 name-last-kbd-macro
+** F5 toggle-truncate-lines
+** F4 call or save a macro
+** F3 record a macro, use f4 to stop
+
+* shortcurt level2
+** C-x l count-brf-lines
+** C-x L count-brf-lines
+** C-c u outline-up-heading
+** C-x a align
+** C-x M-a algin-regexp
+** C-x x switch-major-mode
+** C-x X get-mode-name
+** C-x U revert-buffer-with-utf8
+** C-x G revert-buffer-with-gbk
+** C-x E revert-buffer-coding
+** F1 speedbar
+** C-M-h outline-mark-subtree
+** C-x C-q set readonly
+** C-/ , C-_ undo
+** C-S-/ , S-? , M_ redo
+** C-x u undo-tree
+** M-q formart
+** C-x h full select
+** C-% replace
+** C-M-% regex replace
+
+* shortcurt levle3
+** 小鹤
+编码 直通功能 编码 直通功能
+orm [使用入门] xhvy [小鹤主页]
+ojp [双拼字根键盘图] xhlt [小鹤论坛]
+oiy [常用项] xhwp [小鹤网盘]
+ojm [界面项] owd [word]
+omb [码表项] oec [excel]
+ogj [高级项]、[高级设置] ocm [命令提示行]
+oaj [按键定义] oju [记事本]
+oav [安装目录] ojs [计算器]
+ojc [在线加词]=Ctrl+Alt+= ouj [当前时间]
+ofi [剪贴板反查]=Ctrl+Alt+i orq [当前日期]
+ojf [简繁切换]=Ctrl+Alt+j okv [控制面板]
+ozd [候选窗字典开关] oht [画图]
+ohd [汉典]可输入字词后执行，亦可直接打开 odn [我的电脑]
+oss [搜索引擎]可输入字词后执行，亦可直接打开 owj [程序文件夹]
+oqm [启用隐藏的全码]=Ctrl+Alt+m oic [显隐候选窗]
+ojb [启用补充简码] 更多 请查阅直通车分类码表
+
+** calendar
+***  .    跳回当前天
+***  o    跳到某一个月
+***  g d    跳到某年某月某日
+***  g c    跳到某年某星期的星期几
+***  g C    跳到阴历的某一天
+***  p C    显示当前的阴历日期
+***  h    显示当前节日
+***  i d    加入当前这一天的日程安排
+***  i w    加入每周这一天的日程安排
+***  i m    加入每月这一天的日程安排
+***  i y    加入每年这一天的日程安排
+***  i a    加入周年纪念（anniversary），比如生日等
+***  d    察看当前日期的diary
