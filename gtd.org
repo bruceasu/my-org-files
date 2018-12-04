@@ -57,10 +57,11 @@
 ** 周例会
 ** TODO 同步数据
 :PROPERTIES:
-:LAST_REPEAT: [2018-09-17 周一 09:24]
+:LAST_REPEAT: [2018-12-03 周一 09:41]
 :END:
+- State "DONE"       from "TODO"       [2018-12-03 周一 09:41]
 - State "DONE"       from "TODO"       [2018-09-17 周一 09:24]
-计划时间： <2018-09-18 周二 ++1d>
+计划时间： <2018-09-27 周四 ++1d>
 :PROPERTIES:
 :LAST_REPEAT: [2018-05-21 周一 09:03]
 :END:
