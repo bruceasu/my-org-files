@@ -21,7 +21,7 @@ org-mode虽然也有导出org project的命令, 但是需要在 .emacs中配置�
 
 后来参考了博客园上[麦满屯]的一篇博客1, 用Makefile来简化 org 文件的导出
 和发布. Makefile如下:
-#+BEGAIN_SRC makefile
+#+BEGIN_SRC makefile
 EMACS=emacsclient   # 这里我用的emcasclient, 没有用emacs. 因为我的emacs是以server方式启动的
 ORG_CONFIG_FILE=publish-config.el   # 导出org文件的配置
 EMACS_OPTS=--eval "(load-file \"$(ORG_CONFIG_FILE)\")"
@@ -49,7 +49,7 @@ clean:
 
 make html
 其中用的配置文件 publish-config.el 如下: 主要参考了[麦满屯]的一篇博客1
-#+BEGAIN_SRC emacs-lisp
+#+BEGIN_SRC emacs-lisp
 ;; config for publish site from org files
 (require 'org-publish)
 
@@ -102,7 +102,7 @@ css的使用方法主要参考的了 HE QIN 同学的说明2, 说明的很详细
 org-manual.css 的样式是直接从 org-mode 的官方说明3 上直接下载下来的,
 因为我觉得官方的使用说明的样式还挺简洁.(特别是右上角的内容导航很酷
 ^_^) org-manual.css内容如下:
-#+BEGAIN_SRC css
+#+BEGIN_SRC css
 @import url(http://fonts.googleapis.com/css?family=Droid+Sans|Droid+Sans+Mono|Droid+Serif);
 
 html {
@@ -453,7 +453,7 @@ img.random {
 
 ** 导出html
 最后整个导出工具的目录如下:
-#+BEGAIN_SRC plain
+#+BEGIN_SRC plain
 .
 ├── css
 │   └── org-manual.css
