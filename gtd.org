@@ -13,25 +13,12 @@
 #+AUTHOR: Bruce Asu
 #+EMAIL: bruceasu@163.com
 #+OPTIONS: ^:nil num:nil toc:t
-#+PRETTIFY_CSS:     resources/styles/prettify.css
-#+FONTS_CSS:        resources/styles/fonts.css
-#+PRESENTATION_CSS: resources/styles/presentation.css
-#+COMMON_CSS:       resources/styles/common.css
-#+DEFAULT_CSS:      resources/styles/default.css
-#+MOON_CSS:         resources/styles/moon.css
-#+SAND_CSS:         resources/styles/sand.css
-#+SEA_WAVE_CSS:     resources/styles/sea_wave.css
-#+IE_LT_9_JS:       resources/js/CFInstall.min.js
-#+PRETTIFY_JS:      resources/js/prettify.js
-#+UTILS_JS:         resources/js/utils.js
-#+HTML_HEAD:        <link rel="stylesheet" href="resources/styles/mystyle.css" type="text/css" />
-
 #+OPTIONS: creator:comment d:(not LOGBOOK) date:t e:t email:nil f:t inline:t
 #+OPTIONS: num:t p:nil pri:nil stat:t tags:t tasks:t tex:t timestamp:t toc:t
 #+OPTIONS: todo:t |:t
 #+DESCRIPTION:
 #+EXCLUDE_TAGS: noexport
-#+KEYWORDS: 技术预研,项目
+#+KEYWORDS: GTD
 #+LANGUAGE: en
 #+SELECT_TAGS: export
 #+OPTIONS: html-postamble:auto html-preamble:t tex:t
@@ -43,32 +30,18 @@
 #+HTML_HTML5_FANCY:
 #+INFOJS_OPT:
 
+
+
 * 周期任务
-** 部门工作                                                                     :Department:
-*** HOLD 周报                                                       :HOLD:
-计划时间： <2018-05-25 周五 13:15 ++1w>
-:PROPERTIES:
-:LAST_REPEAT: [2018-05-21 周一 09:03]
-:END:
-- State "DONE"       from "TODO"       [2018-05-21 周一 09:03]
-:PROPERTIES:
-:LAST_REPEAT: [2017-07-31 Mon 08:46]
-** 项目组工作                                                                  :Team:
-** 周例会
-** TODO 同步数据
-:PROPERTIES:
-:LAST_REPEAT: [2018-12-03 周一 09:41]
-:END:
-- State "DONE"       from "TODO"       [2018-12-03 周一 09:41]
-- State "DONE"       from "TODO"       [2018-09-17 周一 09:24]
-计划时间： <2018-09-27 周四 ++1d>
-:PROPERTIES:
-:LAST_REPEAT: [2018-05-21 周一 09:03]
-:END:
-- State "DONE"       from "TODO"       [2018-05-21 周一 09:03]
-:PROPERTIES:
-:LAST_REPEAT: [2017-08-07 Mon 18:38]
-:END:
+** Every day
+** Once a week
+*** TODO 同步数据
+SCHEDULED: <2019-07-14 周日 ++1d>
+
+** Once a month
+** Once a quarter
+** Once a year
+** When
 * 临时待办
 
 * 安排
@@ -110,7 +83,3 @@ What to review:
 #+END:
 
 ** Original Estimate ( C-c C-x i RET)
-
-
-
-

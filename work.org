@@ -3,16 +3,58 @@
 #+STARTUP: hidestars
 #+STARTUP: indent
 #+FILETAGS: PROJECT
-#+TAGS: 需协助(h) 等待(w) 重要紧急(a) 重要非紧急(c) 非重要紧急(b) 非重要非紧急(d) 
+#+TAGS: 需协助(h) 等待(w) 重要紧急(a) 重要非紧急(c) 非重要紧急(b) 非重要非紧急(d)
 #+TAGS: { @Office(o) @Home(h) @Computer(c) @Call(C) @Way(w) @Lunchtime(l) }
 #+TAGS: { project(p) }
 #+TAGS
 #+PROPERTY: CLOCK_INTO_DRAWER t
-
+#+OPTIONS: ^:nil num:nil toc:t
+#+OPTIONS: creator:comment d:(not LOGBOOK) date:t e:t email:nil f:t inline:t
+#+OPTIONS: num:t p:nil pri:nil stat:t tags:t tasks:t tex:t timestamp:t toc:t
+#+OPTIONS: todo:t |:t
+#+DESCRIPTION:
+#+EXCLUDE_TAGS: noexport
+#+KEYWORDS: GTD
+#+LANGUAGE: en
+#+SELECT_TAGS: export
+#+OPTIONS: html-postamble:auto html-preamble:t tex:t
+#+CREATOR: Bruce Asu
+#+HTML_CONTAINER: div
+#+HTML_DOCTYPE: xhtml-strict
+#+HTML_HEAD: <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+#+HTML_HEAD_EXTRA:  <link rel="stylesheet" type="text/css" href="org-manual.css" />
+#+HTML_HTML5_FANCY:
+#+INFOJS_OPT:
 
 # 本文件记录项目的事务
+* Earn
+** clients
+** Leads
+* build
+** projects
+** research
+** business idea
+** blog
+** delegation
+** planning
+** learning
+* Connect
+** Mettups
+** Hangouts
+** other
+* Reference
+* Tasks
+* Routines
+** Every day
+** Once a week
+*** HOLD 周报                                                        :HOLD:
+SCHEDULED: <2019-07-19 周五 17:00 ++1w>
 
-* 项目
+** Once a month
+** Once a quarter
+** Once a year
+** When
+
 
 
 * clock table report
@@ -28,9 +70,3 @@
 #+BEGIN: columnview :hlines 1 :id global
 
 #+END:
-
-
-
-
-
-

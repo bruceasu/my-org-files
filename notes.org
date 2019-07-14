@@ -8,11 +8,25 @@
 #+TAGS
 
 # 本文件记录：
-# 1. 有关信息
-# 2. 想法
+# 1. 便签
+# 2. 决策
+# 3. 有关人士
 
 * 便签
 
-* 想法
+* Decisions
+** Pending
+** Current
+** For review
+** Some day / maybe
+** Archive
 
-
+* People
+** Workmates
+** Classmates
+** Family
+** Friends
+** Meetups
+** Bloggers
+** Famliy friends
+** other task
